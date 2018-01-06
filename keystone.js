@@ -10,7 +10,7 @@ var keystone = require('keystone');
 // and documentation.
 
 keystone.init({
-	'name': 'blog',
+	'name': 'Home',
 	'brand': 'blog',
 
 	'less': 'public',
