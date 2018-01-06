@@ -25,6 +25,8 @@ keystone.init({
 	'user model': 'User',
     'port': 4000,
     host: '127.0.0.1',
+	'cloudinary config': 'cloudinary://416993528872789:z3lDmGQ1LT0Pu9PSizNslvJiLf0@dq8e4osyl',
+	'cookie secret': 'ganboonhong',
 });
 
 // Load your project's Models
