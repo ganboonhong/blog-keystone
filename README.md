@@ -3,25 +3,25 @@ keystone blog
 
 db name: home
 
-Start:
+**Start:**
 
 node keystone.js
 
-Backup:
+**Backup:**
 
 mongodump --db <yourdb> --gzip --archive=/path/to/archive
 
-Restore:
+**Restore:**
 
 mongorestore --gzip --db <yourdb> --archive=/path/to/archive
 
-Cron job:
+**Cron job:**
 
 (backup on every Monday 00:00)
 
 0 0 * * 1 /home/francis/backup.sh
 
-Backup Script:
+**Backup Script:**
 
 timestamp=$(date +"%Y%m%d%H%M")
 
