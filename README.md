@@ -41,3 +41,9 @@ filename="$filename$timestamp.bak.gz"
 
 mongodump --db home --gzip --archive=/home/francis/backup/$filename
 
+**Allow script in Tiny-mce editor plugin**
+---
+1. Edit `blog/node_modules/keystone/admin/server/routes/index.js` line 50 on server (since node_moduels directory is ignored by git) by adding:
+`additionalOptions: { extended_valid_elements : "script[src|async|defer|type|charset]" },`
+2. comment the existing `additionalOptions` option
+
